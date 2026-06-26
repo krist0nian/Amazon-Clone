@@ -5,7 +5,7 @@ import { useStateValue } from "./StateProvider"
 import CheckoutProduct from "./CheckoutProduct"
 
 function Checkout() {
-    const [{ basket }, dispatch] = useStateValue();
+    const [{ basket, user }, dispatch] = useStateValue();
 
   return (
     <div className="checkout">
@@ -14,6 +14,7 @@ function Checkout() {
         className="checkout__ad" 
         src="https://predis.ai/resources/wp-content/uploads/2024/06/mceu_34882845131717072419-66587225ef085.png" alt="" />
         <div>
+            <h3>Hello, {user.email}</h3>
             <h2 className="checkout__title">
                 Your shopping basket</h2>
 
