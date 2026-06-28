@@ -4,6 +4,7 @@ import Product from "./Product";
 
 function Home() {
   return (
+
     <div className="home">
         <div className="home__container">
             <img className="home__image"
